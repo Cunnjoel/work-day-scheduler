@@ -45,10 +45,10 @@ timer();
 $(document).ready(function(){
     $(".saveBtn").on("click", function(){
         //get values in jquery 
-        var text = $(this).siblings(".description").val();
+        var input = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
         //save to localstorage
-        localStorage.setItem(time,text);
+        localStorage.setItem(time,input);
     })
 })
 
